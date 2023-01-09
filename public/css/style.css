@@ -1,0 +1,385 @@
+/* intégration des polices */
+@font-face {
+    font-family: "liberation";
+    src: url("../fonts/LiberationSans-Regular-webfont.ttf") format("truetype");
+}
+
+
+
+body {
+    margin: 0;
+    font-family: liberation;
+}
+
+header {
+    margin-top: 20px ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.logo p {
+    font-weight: 600;
+    display: inline-block;
+    
+}
+
+.sit {
+    color: #EA9F05;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact p {
+    text-align: right;
+    font-weight: 650;
+}
+
+.contact ul {
+    display: flex;
+    text-align: right;
+    list-style: none;
+}
+
+
+.contact ul li {
+    margin-left: 20px;
+}
+.contact ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #1C1C1C;
+    padding-top: 1rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    height: 100%;
+}
+
+.boxeur img {
+    width : 100%;
+}
+
+.produits {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    padding-right: 15vw;
+    padding-left: 15vw;
+    height: 80%;
+}
+
+.haut  {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gaucheHaut, .droiteHaut {
+    position: relative;
+    margin: 40px;
+}
+.gant {
+    width: 20vw;
+}
+
+.promo {
+    position: absolute;
+    right: -20px;
+    top: 10px;
+    color: #EA9F05;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: black;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 8px;
+    letter-spacing: 1px;
+}
+
+.descriptif {
+    position: absolute;
+    bottom: 6vw;
+    font-weight: bold;
+    font-size: 1vw;
+
+}
+
+.prix {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2vw;
+}
+
+.vente {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 8vw;
+    height: 1.8vw;
+    padding: 0.4vw;
+    font-size: 1.2vw;
+    text-decoration: none;
+}
+
+.barre {
+    font-weight: bold;
+    text-decoration: line-through;
+    font-size: 1.8vw;
+}
+
+.orange {
+    color: #EA9F05;
+    font-weight: bold;
+    font-size: 1.8vw;
+}
+
+footer {
+    position: relative;
+    margin-top: 0;
+    background-color: #373737;;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.encadre ul{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top : -2vw;
+    display: flex;
+    justify-content: space-between;
+    list-style : circle;
+    background-color: white;
+    border-radius: 8px;
+    height: 2vw;
+}
+
+
+
+.encadre ul li {
+    margin-left: 2vw;;
+}
+
+.encadre ul :nth-child(1) {
+    list-style: none;
+    margin-left: 0;
+}
+
+.encadre ul :nth-child(4) {
+    margin-right: 40px;
+}
+
+.encadre ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+}
+
+/* .encadre ul li  {
+    font-size: 2vw;
+    width: 2vw;
+} */
+
+.icones {
+    display: flex;
+    justify-content: center;
+    padding-top: 4vw;
+    padding-bottom: 1.5vw;
+    border-bottom: 2px solid #757070;
+
+}
+
+.footerHaut, .footerBas {
+    display: flex;
+    align-items: center;
+
+}
+
+.footerHaut > div, .footerBas > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.icones img {
+    width : 6vw;
+}
+
+.icones > div> div > p {
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    max-width: 10vw;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.reseaux > div {
+    margin-left: 30px;
+}
+
+
+.facebook {
+    width : 15px;
+}
+
+.twitter {
+    width: 30px;
+}
+
+.link {
+    width : 25px;
+}
+
+
+.droits {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+
+    }
+    .logo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        width : 40vw;
+    }
+
+    .sit {
+        display: inline;
+    }
+
+    .contact {
+        font-weight: bold;
+    }
+    .contact p {
+        text-align: start;
+        margin-left: 60px;
+    }
+
+    .contact ul {
+        justify-content: space-between;
+    }
+    .contact ul :nth-child(3) {
+        margin-right: 30px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: #1C1C1C;
+        padding-top: 0.8rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        height: 100%;
+    }
+
+    .haut,.bas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width : 35vw;
+    }
+    .gant {
+        width : 35vw;
+    }
+    .descriptif {
+        top: 30vw;
+        font-size: 1.8vw;
+    }
+
+    .vente {
+        width: 14vw;
+        height: 2.2vw;
+        padding: 0.4vw;
+        font-size: 1.6vw;
+    } 
+    .barre {
+        font-size: large;
+    }
+    .orange {
+        font-size: large;
+    }
+
+    .encadre ul{
+        top :-6vw;
+        height: 5vw;
+        width: 80vw;
+    }
+
+    .encadre ul li a {
+        font-size: 1.1em;
+    }
+
+
+    .footerHaut , .footerBas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .footerHaut > div > p , .footerBas > div> p{
+        text-align: center;
+    }
+
+    .icones > div> div > p{
+        max-width: 18vw;
+    }
+    .reseaux, .droits {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .encadre > ul > li > a {
+        font-size: 0.9em;
+    }
+}
